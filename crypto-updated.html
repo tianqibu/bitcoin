@@ -1,198 +1,134 @@
- /*Topbar*/
-body {
-    margin:0;
-    font-family: Graphik,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+<html>
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Crypto</title>
+        <link rel="stylesheet" href="crypto-updated.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+  
+    <div id="toolbar">
+        <div class="fixedwidth">
+            <div id="signin">
+                <img src="https://cdn4.iconfinder.com/data/icons/browser-ui-small-size-optimized-set/154/user-login-human-man-body-512.png" /> Sign in
+            </div>
+            <div id="bar">
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>Crypto News</a></li>
+                    <li><a>Blog</a></li>
+                </ul>
+            </div>
+        </div>       
+        <div id ="search">
+          <input type="text" placeholder="Search"/>
+      </div>  
+     
+    </div>
 
-}
-#toolbar {
-    background-color:#E4E4E4;
-    height: 45px;
-    width: 100%;
-    color: #333333;
-}
-.fixedwidth {
-    width: 1250px;
-    margin:0 auto;
-}
+<h1 class="Title">Welcome to Cryptomarket </h1>
 
-#search {
-  font-weight:bold;
-  font-size:1.1em;
-  padding:10px 20px 10px 15px;
-  float:right;
-  border-left:2px solid #cccccc; 
-}
+    <div class="flex-container">
+        <div>
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/45_Bitcoin_logo_logos-512.png"
+            class="toparticleimg"
+            alt="Bitcoin"
+          />
+          <a href="#">
+          <strong>Bitcoin</strong></a>
+          <p>Price placeholder</p>
+        </div>
+        <div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ethereum-icon-purple.svg/1200px-Ethereum-icon-purple.svg.png"
+            class="toparticleimg"
+            alt="Ethereum"
+          />
+          <a href="#"
+            ><strong>Ethereum</strong></a>
+          <p>Price placeholder</p>
+        </div>
+        <div>
+          <img
+            src="https://preview.redd.it/b3ko6n060kmz.png?width=960&crop=smart&auto=webp&s=c887ce2483cf2b9ea34f1603fae1c279ff8ae639"
+            class="toparticleimg"
+            alt="Dogecoin"
+          />
+          <a href="#"
+            ><strong>Dogecoin</strong></a
+          >
+          <p>Price placeholder</p>
+        </div>
+      </div>
 
-#signin {
-    font-weight:bold;
-    font-size:1.1em;
-    padding:4px 30px 10px 15px;
-    float:left;
-    border-right:2px solid #cccccc;
-}
-    #signin img {
-        position:relative;
-        top:3px;
-        height: auto;
-         width: 30px;
-    }
-
-    #bar ul {
-        margin:0;
-        padding:0;
-    }
-    #bar li {
-        list-style:none;
-        font-weight:bold;
-        font-size:1em;
-        float:left;
-        display:inline-flex;
-        padding:15px 15px 10px 15px;
-    }
-
-/*Three images*/
-.toparticleimg {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    width: 100%;
-  }
-    .flex-container {
-        display: flex;
-        flex-direction: row;
-        background-color: black;
-        padding: 45px;
-        padding-top: 0;
-    }
-
-    .flex-container div {
-        background-color: gold;
-        width: 600px;
-        margin: 6px;
-        text-align: center;
-        line-height: 35px;
-        font-size: 30px;
-    }
-
-    .flex-container a {
-        display: block;
-        font-family: Graphik,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-        color: black;
-        text-align: left;
-        font-size: 1.9vw;
-        padding-left: 5px;
-        padding-top: 15px;
-        padding-bottom: 0;
-    }
-
-    .flex-container p {
-        font-size: 1.2vw;
-        padding: 12px;
-        padding-top: 60px;
-        color: grey;
-        text-align: left;
-        font-family: Graphik,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-    }
-
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      
-      .cointainer{
-        max-width: 1500px;
-        background-color: gold;
-        margin: auto;
-      }
-      
-      .row{
-        display: flex;
-        flex-wrap: wrap;
-      }
-      
-      ul{
-        list-style: none;
+      <footer class="footer">
+        <div class="cointainer">
+          <div class ="row">
+            <div class="footer-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Affiliates</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Legal Privacy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+             
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Products</h4>
+              <ul>
+                <li><a href="#">Crypto Master</a></li>
+                <li><a href="#">Commerce</a></li>
+                <li><a href="#">Custody</a></li>
+                <li><a href="#">Earn</a></li>
+                <li><a href="#">Pro</a></li>
+                <li><a href="#">USD Coin</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Learn</h4>
+              <ul>
+                <li><a href="#">Buy Bitcoin</a></li>
+                <li><a href="#">Buy Ethereum</a></li>
+                <li><a href="#">Buy Dogecoin</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">gal Privacy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Follow Us</h4>
+              <div class="social-links">
+              <ul>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-skype"></a>
+              </ul>
+                <div class="query">
+                   <h4>Contact Us</h4>
+                  <label class="contact-us" for="say">Send us your query</label>
+            <input name="say" id="say" value="">
+                  
+             
+            </div>
+              </div>
+            </div>         
+          </div>
+  
+          
         
-      }
-
-      /*Footer*/
-      
-      .footer{
-        background-color: #24262b;
-        padding: 70px 0 ;
-      }
-      
-      .footer-col{
-        width: 25%;
-        padding: 0 15px;
+  
         
-      }
-      
-      .footer-col h4{
-        font-size: 18px;
-        colour: #ffffff;
-        text-transform: capitalize;
-        margin-bottom: 20px;
-        font-weight: 400;
-        font-family: Graphik,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-        position: relative;
-      }
-      
-      
-      .footer-col h4::before{
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom:  -10px;
-        background-color: #e91e63;
-        height: 2px;
-        box-sizing: border-box;
-        width:  90px;
-      
-      }
-      
-      .footer-col ul li a{
-        font-size: 16px;
-        font-family: Graphik,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-        text-transform: capitalize;
-        color: black
-          ;
-        text-decoration: none;
-        font-weight: 300;
-        color: #000000;
-        diplay: block;
-        transition: all 0.3s ease;
-      
-      }
-      
-      .footer-col ul li a:hover{
-        color: white;
-        padding-left: 10px;
-      }
-      
-      .footer-col .social-links a{
-        display: inline-block;
-        height: 40px;
-        width: 40px;
-        background-color: rgba(255,255,255,0.2);
-        margin: 0 10px 10px 0 ;
-        text-align: center;
-        line-height: 40px;
-        border-radius: 50%;
-        color: #FFFFFF;
-        transition all 0.3s ease;
-      }
-      
-      .social-links a:hoover{
-        color: #000000;
-        background-color: #FF0000;
-      }
-      
-      /*responsive*/
-      @media(max-width: 767px){
-        .footer-col {
-          width: 50%;
-          padding: 0 15px;
-        }
-      }
+      </footer>
+</body>
+</html>
