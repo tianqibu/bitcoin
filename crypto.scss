@@ -311,7 +311,7 @@ img {vertical-align: middle;}
       /*Footer*/
       
       .footer {
-        background-color: #24262b;
+        background-color: gold;
         padding: 70px 0 ;
       }
       
@@ -350,7 +350,6 @@ img {vertical-align: middle;}
         color: black;
         text-decoration: none;
         font-weight: 300;
-        color: #000000;
         display: block;
         transition: all 0.3s ease;
       
@@ -371,14 +370,14 @@ img {vertical-align: middle;}
         line-height: 40px;
         border-radius: 50%;
         color: #FFFFFF;
-        /* transition all: 0.3s ease; /*
+        /* transition all: 0.3s ease; */
       }
       
       .social-links a:hoover{
         color: #000000;
         background-color: #FF0000;
       }
-      
+     
       /*responsive*/
 
     @media(max-width: 767px) {
@@ -387,4 +386,4 @@ img {vertical-align: middle;}
           padding: 0 15px;
         }
       }
-    }
+    
