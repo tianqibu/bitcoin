@@ -60,6 +60,10 @@ h1.title {
   border-radius: 15px;
 }
 
+.search-button {
+  background-color: transparent;
+}
+
 /* search button */
 /* sign in */
 #signin {
