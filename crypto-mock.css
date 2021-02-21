@@ -13,6 +13,20 @@ h1.title {
   white-space: nowrap;
 }
 
+h2 {
+  font-size: 40px;
+  color: white;
+  background-color: black;
+  padding: 30px;
+  text-align: center;
+}
+
+/* offices map */
+.officesMap {
+  padding-bottom: 150px;
+  background-color: black;
+}
+
 /* top bar */
 #toolbar {
   background-color: black;
@@ -37,38 +51,83 @@ h1.title {
 }
 
 /* search */
-#search {
-  font-weight: bold;
-  font-size: 1.1em;
-  padding: 10px 20px 20px 15px;
-  float: right;
+.searchContainer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: black;
+  width: 100%;
+  margin: auto;
+  text-align: center;
 }
 
-#search-box {
-  line-height: 25px;
+* {
+  box-sizing: border-box;
 }
 
-#search-box {
-  width: 300px;
-  line-height: 35px;
-  padding-left: 15px;
-  margin-right: 15px;
-  margin-left: 15px;
-  font-size: 1.25em;
-  font-style: italic;
-  outline: none;
+#searchInput {
+  background-image: url("/css/searchicon.png");
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 60%;
+  font-size: 16px;
+  padding: 20px;
+  border: 1px solid #ddd;
   border-radius: 15px;
+  text-align: center;
 }
 
-/* search button */
+#filterUL {
+  list-style-type: none;
+  padding: 0;
+  margin: auto;
+  display: none;
+}
+
+#searchInput:hover + #filterUL {
+  display: block;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+
+#filterUL:hover {
+  display: block;
+  color: white;
+  text-align: center;
+}
+
+#filterUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  /* Prevent double borders */
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  width: 60%;
+  text-align: center;
+}
+
+#filterUL li a:hover:not(.header) {
+  background-color: gold;
+}
+
 /* sign in */
 #signin {
   font-size: 1.2em;
-  padding: 4px 30px 20px 15px;
+  padding: 0px 10px 10px 10px;
   float: left;
   border-right: 2px solid white;
   border-left: 2px solid white;
   margin: 0;
+}
+
+#signin p {
+  float: left;
+  padding-top: 15px;
+  padding-right: 2px;
+  padding-left: 5px;
 }
 
 #signin:hover {
@@ -77,11 +136,10 @@ h1.title {
 
 #signin img {
   position: relative;
-  top: 3px;
   height: auto;
   width: 30px;
-  padding-right: 8px;
-  padding-top: 10px;
+  padding-right: 5px;
+  padding-top: 12px;
 }
 
 #bar ul {
@@ -102,7 +160,7 @@ h1.title {
   color: gold;
 }
 
-/* SLIDESHOW */
+/* slideshow */
 * {
   box-sizing: border-box;
 }
@@ -126,6 +184,9 @@ img {
   position: relative;
   margin: auto;
   padding: 40px;
+  padding-top: 50px;
+  height: 800px;
+  background-color: white;
 }
 
 /* Next & previous buttons */
