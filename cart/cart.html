@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <title>CrytoProducts</title>
+    <link rel="stylesheet" href="cart-style.css">
+    <script src="cart-script.js" async></script>
+    <link rel="stylesheet" href="C:\Users\jaron\Desktop\bitcoin\crypto-mock.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+</head>
+<body>
+
+<!-- navigation bar -->
+
+<div id="toolbar">
+    <div class="fixedwidth">
+      <h2 id="logo">CRYPTOMARKET</h2>
+      <!-- sign in -->
+        <div id="signin">
+            <img id="sign-in" src="data:image/png;base64,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"/>Sign In
+        </div>
+      <!-- menu items -->
+        <div id="bar">
+            <ul>
+                <li><a href="C:\Users\jaron\Desktop\bitcoin\crypto-updated.html">Home</a></li>
+                <li><a href="#news">Crypto News</a></li>
+                <li><a href="cart.html">Store</a></li>
+            </ul>
+        </div>
+    </div>       
+    <div id ="search"> <!-- search bar -->
+      <form>
+        <label for="web-search">
+        <input type="text" id="search-box" placeholder="Search.."/>
+        <button type="submit" class="search-button">&#x1F50E;</button>
+      </form>
+  </div>  
+</div>
+
+
+<section class="container content-section">
+            <br/>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Bitcoin</span>
+                    <img class="shop-item-image" src="product-bitcoin.png"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$1000</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Ethereum</span>
+                    <img class="shop-item-image" src="product-ethereum.png"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$100</span>
+                        <button class="btn btn-primary shop-item-button"type="button">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Dogecoin</span>
+                    <img class="shop-item-image" src="product-dogecoin.png"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9999</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+            <section class="container content-section">
+                <h2 class="section-header"></h2>
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">Currency</span>
+                    <span class="cart-price cart-header cart-column">Price</span>
+                    <span class="cart-quantity cart-header cart-column">Quantity</span>
+                </div>
+
+                <div class="cart-items">                           
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price"></span>
+                </div>
+                <button class="btn btn-primary btn-purchase" type="button">Checkout</button>
+            </section>
+        </section>  
+    </body>
+</html>
